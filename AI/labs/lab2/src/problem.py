@@ -43,17 +43,6 @@ class Controller:
     def getProblem(self):
         return self._problem
 
-    def orderStates(self, states):
-        sortSt = sorted(states)
-        return sortSt
-
-    def findSol(self, now, dad):
-        ans = [now]
-        while now != self._problem._initState:
-            now = dad[now]
-            ans.insert(0, now)
-        return ans
-
     def gbfs(self):
         path = []
         priorityQueue = Queue.PriorityQueue()
