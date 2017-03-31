@@ -1,0 +1,19 @@
+.blueBackground{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100px;
+  width: 200px;
+  background-color: blue;
+}
+
+.blueBackground:hover{
+  position: absolute;
+  height: 100px;
+  top: 100%;
+  left:100%;
+  margin-top:-100px;
+  margin-left:-200px;
+  background-color: red;
+  transition:2s;
+}

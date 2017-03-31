@@ -1,0 +1,17 @@
+.tableHeader{
+	background-color: gray;
+
+}
+
+
+.collapsable td {
+	background-color: #ddd;
+	visibility: visible;
+	opacity: 1;
+
+}
+.collapsable:hover td {
+	visibility: hidden;
+  opacity: 0;
+  transition: visibility 800ms, opacity 0.5s linear;
+}
