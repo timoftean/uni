@@ -1,0 +1,5 @@
+rootProject.name = 'c03-socket'
+include 'c03-common'
+include 'c03-client'
+include 'c03-server'
+
