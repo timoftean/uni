@@ -1,0 +1,13 @@
+<div *ngIf="client">
+  <h2>Client {{client.name}} details</h2>
+  <div>
+    <label>Name: </label> {{client.name}}
+    <input [(ngModel)]="client.name" placeholder="name">
+  </div>
+  <div>
+    <label>Cnp: </label> {{client.cnp}}
+    <input [(ngModel)]="client.cnp" placeholder="cnp">
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+</div>
