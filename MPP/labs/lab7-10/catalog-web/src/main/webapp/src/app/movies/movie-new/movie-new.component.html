@@ -1,0 +1,22 @@
+<h3>Add Movie</h3>
+
+<div>
+  <label>Name: </label>
+  <input #movieName/>
+</div>
+<div>
+  <label>Director: </label>
+  <input #movieDirector >
+</div>
+<div>
+  <label>Genre: </label>
+  <input #movieGenre/>
+</div>
+<div>
+  <label>Available Copies: </label>
+  <input #movieAvailableCopies/>
+</div>
+<div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save(movieName.value, movieDirector.value, movieGenre.value, movieAvailableCopies.value)">Save</button>
+</div>

@@ -1,0 +1,14 @@
+<h3>Add Client</h3>
+
+<div>
+  <label>Name: </label>
+  <input #clientName/>
+</div>
+<div>
+  <label>Cnp: </label>
+  <input #clientCnp >
+</div>
+<div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save(clientName.value, clientCnp.value)">Save</button>
+</div>
