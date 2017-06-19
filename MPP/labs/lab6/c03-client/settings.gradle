@@ -1,0 +1,2 @@
+include ':c03-common'
+project(':c03-common').projectDir = new File(settingsDir, '../c03-common')
