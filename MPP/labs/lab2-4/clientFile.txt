@@ -1,0 +1,7 @@
+1,Murison,21
+2,Vector,20
+3,Alex,20
+4,Mark,20
+5,Ariesan,20
+6,Darius,22
+7,Messi,28

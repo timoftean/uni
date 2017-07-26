@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><movies>
+    
+<movie movieid="10"><name>alexandru</name><director>directorr</director><genre>action</genre><availablecopies>15</availablecopies></movie><movie movieid="3"><name>movie3</name><director>director3</director><genre>action</genre><availablecopies>20</availablecopies></movie></movies>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><rents>
+
+<rent rentid="2">
+    <clientid>2</clientid>
+    <movieid>2</movieid>
+    <nocopies>25</nocopies>
+</rent>
+    <rent rentid="3">
+        <clientid>1</clientid><movieid>2</movieid><nocopies>25</nocopies></rent>
+    <rent rentid="4"><clientid>2</clientid><movieid>3</movieid><nocopies>4</nocopies></rent>
+    <rent rentid="1"><clientid>1</clientid><movieid>1</movieid><nocopies>2</nocopies></rent>
+</rents>

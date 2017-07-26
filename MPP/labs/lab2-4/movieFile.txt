@@ -1,0 +1,7 @@
+
+6,Thors,Lemon,fantasy,6
+2,Assassin'sCred,Morison,action,21
+3,JohnWick,Albert,drama,12
+5,TheAvengers,Davis,fantasy,5
+7,SuperMan,Lemon,fantasy,8
+4,BridgeofSpies,Davis,drama,10
