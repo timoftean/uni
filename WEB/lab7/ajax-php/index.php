@@ -10,7 +10,6 @@ $types = $db_handle->runSelectQuery($sql);
 ?>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script>
-    var nameList = [];
 function createNew() {
 	$("#add-more").hide();
 	var data =   '<table id="table-add" class="tbl">'+
@@ -104,7 +103,6 @@ function deleteRecord(id) {
 }
 function showRow(id,author,name,type,recipe){
     $('#table-content').addClass('hidden');
-    nameList.push(name);
     var content = '<table class="tbl">'+
   '<thead> <tr>'+
 	  '<th class="table-header">Author</th>'+
@@ -135,13 +133,14 @@ function back(){
     $('#table-content').removeClass('hidden');
 }
 function showType(type){
-    var rows = '';
+
+    console.log("type: ",type);
     $.ajax({
         url: "get.php",
         type: "GET",
         data:'type='+type,
         success: function(data){
-
+            console.log("data: ",data);
             $('#table-content').addClass('hidden');
             nameList.push(name);
             var content = '<table class="tbl">'+
@@ -154,14 +153,14 @@ function showType(type){
                 '</tr>'+
                 '</thead>'+
                 '<tbody id="table-body" class="row-table-body">'+
-                '<tr class="table-row" id="table-row-"+id >'+
-                '<td contenteditable="true" onBlur="saveToDatabase('+this+','+author+','+id+')" onClick="editRow('+this+');">'+author+'</td>'+
-                '<td contenteditable="true" onBlur="saveToDatabase('+this+','+name+','+id+')" onClick="editRow('+this+');">'+name+'</td>'+
-                '<td contenteditable="true" onBlur="saveToDatabase('+this+','+type+','+id+')" onClick="editRow('+this+');">'+type+'</td>'+
-                '<td contenteditable="true" onBlur="saveToDatabase('+this+','+recipe+','+id+')" onClick="editRow('+this+');">'+recipe+'</td>'+
-                '<td><a class="ajax-action-links" onclick="deleteRecord('+id+');">Delete</a></td>'+
-                '</tr>'+
-                rows+
+//                '<tr class="table-row" id="table-row-"+id >'+
+//                '<td contenteditable="true" onBlur="saveToDatabase('+this+','+author+','+id+')" onClick="editRow('+this+');">'+author+'</td>'+
+//                '<td contenteditable="true" onBlur="saveToDatabase('+this+','+name+','+id+')" onClick="editRow('+this+');">'+name+'</td>'+
+//                '<td contenteditable="true" onBlur="saveToDatabase('+this+','+type+','+id+')" onClick="editRow('+this+');">'+type+'</td>'+
+//                '<td contenteditable="true" onBlur="saveToDatabase('+this+','+recipe+','+id+')" onClick="editRow('+this+');">'+recipe+'</td>'+
+//                '<td><a class="ajax-action-links" onclick="deleteRecord('+id+');">Delete</a></td>'+
+//                '</tr>'+
+                data+
                 '</tbody>'+
                 '</table>'+
                 '<div  class="ajax-action-button" onclick="back()">Back</div>';

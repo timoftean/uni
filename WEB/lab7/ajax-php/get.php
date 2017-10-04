@@ -1,7 +1,10 @@
 <?php
 require_once("dbcontroller.php");
 $db_handle = new DBController();
-$sql = "Select * from recipes WHERE  type = ".$_GET["type"];
+$conn = $db_handle->conn;
+$type = $conn->real_escape_string(strip_tags($_GET["type"]));
+//$sql = "'Select * from recipes WHERE  type = '".$_GET["type"];
+$sql = "SELECT * FROM recipes WHERE type = '" . $type . "';";
 $result = $db_handle->runSelectQuery($sql);
 
 ?>
