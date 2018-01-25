@@ -7,3 +7,11 @@
 * Database Management Systems
 * MPP
 * Software Engineering
+
+### 5th Semester
+
+* Mobile Applications
+* LFTC
+* PDP
+* Design Patterns
+* Public Key Crpyotgraphy
