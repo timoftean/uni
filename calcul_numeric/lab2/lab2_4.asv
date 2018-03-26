@@ -1,0 +1,15 @@
+
+
+f=@(x) sqrt((5*x.^2)+1)
+h=0.25
+a=1:0.25:2.5
+
+y=f(a)
+n=length(y)
+T=zeros(n)
+T(:,1)=y;
+for i=1:6
+    T(1:n-i+1,i)=diff(T(1:n-i+1, i-1))
+end
+
+disp(T)
