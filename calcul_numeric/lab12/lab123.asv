@@ -1,0 +1,9 @@
+
+f = @(x)(x-2)^2-ln(x);
+
+n=100
+epsilon=10^-4
+
+for n=1:n
+    
+end
